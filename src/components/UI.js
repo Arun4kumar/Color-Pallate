@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const Button = styled.button`
   background-color: ${(props) => props.static};
@@ -30,9 +30,18 @@ export const Container = styled.div`
   background-color: ${(props) => props.background};
   width: 100%;
   min-height: 100vh;
+
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-repeat: repeat;
+`;
+
+export const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
 `;

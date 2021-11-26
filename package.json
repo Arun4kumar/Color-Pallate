@@ -1,5 +1,5 @@
 {
-  "homepage": "http://github.com/Arun4kumar/Color-Pallate",
+  "proxy": "http://colormind.io",
   "name": "colorpalate",
   "version": "0.1.0",
   "private": true,
