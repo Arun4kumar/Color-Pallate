@@ -29,6 +29,10 @@ function App() {
         throw new Error("Api Request Failed");
       }
       const result = await res.data.result;
+      if (!result) {
+        throw new Error("Failed to fetch");
+      }
+      console.log(result);
       setColors(result);
       setLoading(false);
     } catch (error) {
